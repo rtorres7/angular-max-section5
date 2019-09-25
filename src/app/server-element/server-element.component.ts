@@ -14,8 +14,6 @@ import {
   ContentChild,
   ElementRef
 } from '@angular/core';
-import { conditionallyCreateMapObjectLiteral } from '@angular/compiler/src/render3/view/util';
-import { ConsoleReporter } from 'jasmine';
 
 // tslint:disable-next-line: no-conflicting-lifecycle
 @Component({
@@ -44,42 +42,42 @@ export class ServerElementComponent implements
   @ContentChild('contentParagraph', { static: true }) paragraph: ElementRef;
 
   constructor() {
-    console.log('constructor called!');
+    // console.log('constructor called!');
    }
 
-  ngOnChanges(changes: SimpleChanges) {
-    console.log('ngOnChanges called!');
-    console.log(changes);
-  }
+  // ngOnChanges(changes: SimpleChanges) {
+  //   console.log('ngOnChanges called!');
+  //   console.log(changes);
+  // }
 
-  ngOnInit() {
-    console.log('ngOnInit called!');
-    console.log('text content: ' + this.header.nativeElement.textContent);
-    console.log('text content of paragraph: ' + this.paragraph.nativeElement.textContent);
-  }
+  // ngOnInit() {
+  //   console.log('ngOnInit called!');
+  //   console.log('text content: ' + this.header.nativeElement.textContent);
+  //   console.log('text content of paragraph: ' + this.paragraph.nativeElement.textContent);
+  // }
 
-  ngDoCheck() {
-    console.log('ngDoCheck called!');
-  }
+  // ngDoCheck() {
+  //   console.log('ngDoCheck called!');
+  // }
 
-  ngAfterContentInit() {
-    console.log('ngAfterContentInit called!');
-    console.log('text content of paragraph: ' + this.paragraph.nativeElement.textContent);
-  }
+  // ngAfterContentInit() {
+  //   console.log('ngAfterContentInit called!');
+  //   console.log('text content of paragraph: ' + this.paragraph.nativeElement.textContent);
+  // }
 
-  ngAfterContentChecked() {
-    console.log('ngAfterContentChecked called!');
-  }
-  ngAfterViewInit() {
-    console.log('ngAfterContentInit called!');
-    console.log('text content: ' + this.header.nativeElement.textContent);
-  }
+  // ngAfterContentChecked() {
+  //   console.log('ngAfterContentChecked called!');
+  // }
+  // ngAfterViewInit() {
+  //   console.log('ngAfterContentInit called!');
+  //   console.log('text content: ' + this.header.nativeElement.textContent);
+  // }
 
-  ngAfterViewChecked() {
-    console.log('ngAfterContentChecked called!');
-  }
+  // ngAfterViewChecked() {
+  //   console.log('ngAfterContentChecked called!');
+  // }
 
-  ngOnDestroy() {
-    console.log('ngOnDestroy called!');
-  }
+  // ngOnDestroy() {
+  //   console.log('ngOnDestroy called!');
+  // }
 }
